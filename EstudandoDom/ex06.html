@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        #area {
+            background-color:rgb(143, 62, 180);
+            color: white;
+            font-size: 25px;
+            width: 200px;
+            height: 200px;
+            text-align:center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'> <!--Posso informar o evento direto no html e nomear a acao que sera chamada na funcao ex:<div id='area 'onclick='clicar()'-->
+        interajaaaaa
+    </div>
+
+    <script>
+        var a = document.getElementById('area')//mas primeiro eu preciso me conectar com o elemento onde irar ocorrer o evento
+        a.addEventListener('click', clicar)//Informo o evento direto no script, com evento seguido da acao que sera no nome da funcao
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        //declarei a funcao que irar fazer acoes quando o evento ocorrer.
+        function clicar() {
+            a.innerText = 'cliquei'//aqui sao as acoes que desiguinei, sao as acoes da funcao!
+        }
+
+        function entrar() {
+            a.style.background = 'black'//aqui sao as acoes que desiguinei, sao as acoes da funcao!
+        }
+
+        function sair() {
+            a.style.background = 'gray'//aqui sao as acoes que desiguinei, sao as acoes da funcao!
+        }
+
+        
+    </script>
+</body>
+</html>

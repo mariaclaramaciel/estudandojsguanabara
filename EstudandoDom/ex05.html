@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom</title>
+    <style>
+        body {
+            background-color: rgb(212, 209, 209);
+            color: rgb(175, 121, 219);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class="msg">Clique em mim!</div>
+    <script>
+        //selecionando por TAG:
+       // var p1 = document.getElementsByTagName('p')[0]//quando element esta no plural precisa especificar com[]
+        
+        //selecionando por ID:
+       // var d = document.getElementById('msg1')
+        //d.style.background = 'white';
+
+        //selecionando com seletor geral unico:
+        var di = document.querySelector('.msg')
+        di.style.background = 'black';
+    </script>
+</body>
+</html>
